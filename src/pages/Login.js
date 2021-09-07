@@ -4,6 +4,7 @@ import Illustration from "../components/Illustration"
 import LoginImg from '../assets/images/login.svg';
 import Button from '../components/Button'
 import Input from "../components/Input"
+import { Link } from "react-router-dom";
 
 
 export default function Login() {
@@ -17,7 +18,7 @@ export default function Login() {
                     <Input type="password" placeholder="Enter password" icon="lock" />
                     <Button text="SUBMIT NOW" />
                     <div className="info">
-                        Don't have an account? <a href="Signup.html">Signup</a> instead.
+                        Don't have an account? <Link to="/signup">Signup</Link> instead.
                     </div>
                 </Form>
             </div>

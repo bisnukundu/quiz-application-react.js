@@ -5,6 +5,7 @@ import SignImg from '../assets/images/signup.svg';
 import Checkbox from "../components/Checkbox"
 import Button from '../components/Button'
 import Input from "../components/Input"
+import { Link } from "react-router-dom";
 
 
 export default function Signup() {
@@ -21,7 +22,7 @@ export default function Signup() {
                     <Checkbox text="I agree to the Terms & Conditions" />
                     <Button text="SUBMIT NOW" />
                     <div className="info">
-                        Already have an account? <a href="login.html">Login</a> instead.
+                        Already have an account? <Link to="/login">Login</Link> instead.
                     </div>
                 </Form>
             </div>
