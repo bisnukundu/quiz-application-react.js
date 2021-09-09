@@ -1,13 +1,14 @@
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Quiz from "./pages/Quiz";
 import './styles/App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
+import Result from "./pages/Result";
 
 
 function App() {
@@ -23,6 +24,12 @@ function App() {
           </Route>
           <Route exact path="/login" >
             <Login />
+          </Route>
+          <Route exact path="/quiz">
+            <Quiz />
+          </Route>
+          <Route exact path="/result">
+            <Result />
           </Route>
         </Switch>
       </Router>

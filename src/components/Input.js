@@ -4,7 +4,7 @@ export default function Input({icon,...rest}) {
     return (
         <div className={Bisnu.textInput}>
             <input {...rest}/>
-            <span class="material-icons-outlined"> {icon} </span>
+            <span className="material-icons-outlined"> {icon} </span>
         </div>
     )
 }

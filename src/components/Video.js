@@ -1,9 +1,10 @@
 import Bisnu from '../styles/Video.module.css';
 import Thumble from '../assets/images/3.jpg';
+import { Link } from 'react-router-dom';
 export default function Video() {
     return (
         <>
-            <a href="quiz.html"
+            <Link to="/quiz"
             ><div className={Bisnu.video}>
                     <img src={Thumble} alt="Video title" />
                     <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
@@ -12,7 +13,7 @@ export default function Video() {
                         <p>Score : Not taken yet</p>
                     </div>
                 </div>
-            </a>
+            </Link>
         </>
     )
 }
